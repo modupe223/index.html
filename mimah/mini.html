@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+<body class="stop-scrolling">
 
     <main>
-        <header>
+        <header id="header">
             <nav>
                 <div class="container">
                     <div class="logo">
@@ -21,21 +21,27 @@
                     <div class="links">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#header">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#">Registration</a>
+                                <a href="#sign up ">Sign up</a>
                             </li>
                             <li>
-                                <a href="#">Login</a>
+                                <a href="#login">Login</a>
                             </li>
                             <li>
-                                <a href="#" class="active">Contact Us</a>
+                                <a href="#contact me" class="active">Contact me</a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="open">
+                        <div class="hamburger-menu">
+                          <div class="bar"></div>  
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -53,13 +59,13 @@
 
                     <div class="column-2 image">
                       <img style="width:300px; height: 400px;
-                     margin-left: 15em; border-radius: 75%;" src="images/she.jpg" class="img-element z-index" alt="">  
+                     margin-left: 5em; border-radius: 75%;" src="images/she.jpg" class="img-element z-index" alt="">  
                     </div>
 
                 </div>
             </div>
         </header>
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
                 <div class="section-header">
                     <h2 class="title" data-title="Who am i">About Me</h2>
@@ -71,7 +77,7 @@
             </div>
         </section>
        
-        <section class="contact">
+        <section class="contact" id="contact me">
             <div class="container">
                 <div  class="contact-box">
                     <div class="contact-form">
@@ -92,8 +98,9 @@
                 </div>
             </div>
         </section>
+        
     </main>
-
+ 
     <script src="mini.js"></script>
 </body>
 </html>
